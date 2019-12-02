@@ -16,6 +16,23 @@ Vue.component('tabela-aluno', {
     template: '<div id = "aluno1" align = "center"><table><tr><th>Aluno</th><th>Matricola</th><th>Notas</th></tr><tr><td> {{Nome}} </td><td> {{Matricola}} </td><td> {{Notas}} </td></tr></table></div>'
 });
 
+Vue.component('lista-aluno', {
+    data: function () {
+        var nome = [];
+        for (var i = 0; i < 5; i++) {
+            nome[i] =  prompt("Nome");
+        }
+        return {
+            Nome1: nome[0],
+            Nome2: nome[1],
+            Nome3: nome[2],
+            Nome4: nome[3],
+            Nome5: nome[4]
+        }
+    },
+    template: '<div id = "aluno1" align = "center"><table><tr><th>Aluno</th></tr><tr><td> {{Nome1}} </td></tr><tr><td> {{Nome2}} </td></tr><tr><td> {{Nome3}} </td></tr><tr><td> {{Nome4}} </td></tr><tr><td> {{Nome5}} </td></tr></table></div>'
+});
+
 // Local para adicionar os elementos
 new Vue({
     el: '#Tabela',
