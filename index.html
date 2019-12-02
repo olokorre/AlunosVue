@@ -7,22 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body>  
-        <!-- <div id = "aluno1" style = "display: none;"> -->
-        <div id = "aluno1">
-            <table>
-                <tr>
-                    <th>Aluno</th>
-                    <th>Matricola</th>
-                    <th>Notas</th>
-                </tr>
-                <tr>
-                    <td> {{Nome}} </td>
-                    <td> {{Matricola}} </td>
-                    <td> {{Notas}} </td>
-                </tr>
-            </table>
+        <div id = "Tabela">
+            <!-- Tentativas... -->
+            <!-- <button v-on:click = "AddTabela()">Adicionar Tebla de aluno</button> -->
+            <tabela-aluno></tabela-aluno>
         </div>
-        <script src = "js/script.js"></script>
+        <script src = "js/jquery-2.1.3.min.js"></script>
         <script src = "js/vue.js"></script>
         <script src = "js/script.js"></script>
     </body>
